@@ -208,7 +208,7 @@ function Users() {
 
 ### Migrating `abortOnUnmount`
 
-The classic integration takes `abortOnUnmount` when you create the client, which turns it on for every query
+The classic integration takes `abortOnUnmount` when you create the client, which sets the default for every query — an individual query can still override it through its own `trpc` option
 
 ```ts twoslash title="trpc.ts"
 // @filename: server/router.ts
